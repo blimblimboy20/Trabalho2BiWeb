@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../public/res/styles/stylesheet.css">
+  <script src="https://kit.fontawesome.com/60da566315.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="flex flex-1 flex-col bg overflow-hidden">
+    <!--TOPBAR-->
+    <div class="flex flex-row topbar align-center space-between">
+      <div class="flex flex-row align-center gap-2 ph-15">
+        <img id="pfp" src="../public/assets/images/pfp.jpg" >
+        Juliana
+        <i class="fa-solid fa-chevron-down pointer"></i>
+      </div>
+      <img src="../public/assets/images/67b261a478ac64b64470c3f9be940932.png">
+      <div class="flex flex-row align-center gap-2 ph-15">
+        <button class="button-small-2">...</button>
+        <button onclick="sair()" class="button-small">SAIR</button>
+      </div>
+    </div>
+    <div class="flex flex-row w-100 h-100">
+      <!--SIDEBAR-->
+      <div class="sidebar flex flex-col gap-2 pt-40">
+        <button onclick="inscricoes()"><i class="fa-solid fa-bookmark"></i> INSCRIÇÕES</button>
+        <button onclick="instituicoes()"><i class="fa-solid fa-landmark"></i> INSTITUIÇÕES</button>
+        <button onclick="config()"><i class="fa-solid fa-gear"></i> CONFIGURAÇÕES</button>
+        <button onclick="cadastrar()"><i class="fa-solid fa-circle-plus"></i> CADASTRAR INSTITUIÇÃO</button>
+      </div>
+      <!--CONTENT-->
+      <div class="content flex flex-col w-100 align-end">
+        <div class="search-input flex flex-row space-between align-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="w-100" placeholder="Buscar Instituição">
+        </div>
+        <div class="scroll-container flex flex-row h-100 gap-2 align-center overflow-scroll scrollbar">
+          <!--SUB CONTAINERS-->
+          <div class="sub-container flex flex-col space-between gap-2">
+            <div class="overflow-scroll-y scrollbar">
+              <h3>BIBLIOTECA DA ESPERANÇA</h3>
+              <p class="description">
+                Em uma cidade pequena, a Biblioteca da Esperança sempre foi um refúgio
+                para estudantes e amantes de livros. No entanto, devido à falta de fundos,
+                ela enfrenta a ameaça de fechar suas portas. Sem financiamento, não conseguem
+                atualizar seu acervo nem manter as instalações. A comunidade local está
+                organizando um festival do livro para arrecadar fundos e salvar este centro
+                de conhecimento e cultura.
+              </p>
+            </div>
+            <button class="button-large-2 w-100">SABER MAIS</button>
+          </div>
+          <div class="sub-container flex flex-col space-between gap-2">
+            <div class="overflow-scroll-y scrollbar">
+              <h3>CENTRO DE REABILITAÇÃO VIDA NOVA</h3>
+              <p class="description">
+                Este centro é um ponto crucial para a recuperação de pessoas que lutam contra
+                o vício em drogas. Com instalações limitadas e equipamentos obsoletos, eles
+                estão lutando para fornecer o apoio necessário aos pacientes. Uma campanha de
+                arrecadação de fundos foi lançada para melhorar os serviços e contratar mais
+                profissionais capacitados.
+              </p>
+            </div>
+            <button class="button-large-2 w-100">SABER MAIS</button>
+          </div>
+          <div class="sub-container flex flex-col space-between gap-2">
+            <div class="overflow-scroll-y scrollbar">
+              <h3>ABRIGO DE ANIMAIS AMIGOS FIÉIS</h3>
+              <p class="description">
+                O abrigo enfrenta uma crise financeira severa, com dificuldades para alimentar
+                e cuidar dos animais resgatados. Sem ajuda urgente, muitos animais podem ficar
+                sem cuidados básicos. A instituição está promovendo uma feira de adoção e um bazar
+                beneficente para arrecadar fundos.
+              </p>
+            </div>
+            <button class="button-large-2 w-100">SABER MAIS</button>
+          </div>
+          <div class="sub-container flex flex-col space-between gap-2">
+            <div class="overflow-scroll-y scrollbar">
+              <h3>ESCOLA DE MÚSICA HARMONIA</h3>
+              <p class="description">
+                Dedicada a ensinar música para crianças de comunidades carentes, a Escola de Música Harmonia
+                está prestes a fechar devido à falta de recursos. Instrumentos estão quebrados e o prédio
+                precisa de reformas. A escola está organizando um concerto beneficente para levantar fundos
+                e continuar seu trabalho.
+              </p>
+            </div>
+            <button class="button-large-2 w-100">SABER MAIS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function inscricoes() {
+      window.location = "subscriptions.html";
+    }
+    function instituicoes() {
+      window.location = "dashboard.html";
+    }
+    function config() {
+      window.location = "config.html";
+    }
+    function cadastrar() {
+      window.location = "add.html";
+    }
+    function sair() {
+      window.location = "../index.html"
+    }
+  </script>
+</body>
+</html>

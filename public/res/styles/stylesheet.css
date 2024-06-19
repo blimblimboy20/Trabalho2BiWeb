@@ -1,0 +1,448 @@
+/* MAIN */
+body {
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.b-test {
+  border: solid 3px red;
+}
+
+/* UTILITIES */
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.mb-10 {
+  margin-bottom: 10vh;
+}
+
+.mt-4 {
+  margin-top: 4vh;
+}
+
+.mt-30 {
+  margin-top: 20vh;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.ph-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ph-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.h-1 {
+  height: 1px;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-91-9 {
+  height: 80%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-50 {
+  width: 24%;
+}
+
+.w-51 {
+  width: 50%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.gap-2 {
+  gap: 20px;
+}
+
+.gap-4 {
+  gap: 40px;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.self-bottom {
+  justify-self: end;
+}
+
+.self-end {
+  align-self: end;
+}
+
+.overflow-scroll {
+  overflow-x: auto;
+}
+
+.overflow-scroll-y {
+  overflow-y: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* CONTAINERS */
+.bg {
+  background-image: radial-gradient(ellipse at bottom, #2064D5 -20%, #0C1D3E 50%, #000000 90%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.topbar {
+  width: 100%;
+  height: 10vh;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.topbar #pfp {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+
+.topbar img {
+  height: 75%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 15%;
+  min-width: 15%;
+  background-image: radial-gradient(ellipse at bottom right, #2064D5 -80%, #0C1D3E 20%, #000000 90%);
+}
+
+.sidebar button {
+  width: 80%;
+  background: #FFFFFF;
+  color: black;
+  font-size: 14px;
+  border: transparent;
+  border-radius: 8px;
+  align-self: center;
+  cursor: pointer;
+  padding: 1vh;
+}
+
+.main {
+  height: 100vh;
+}
+
+.content {
+  padding: 30px;
+}
+
+.search-input {
+  width: 13%;
+  background: #FFFFFF;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search-input input {
+  border: none;
+  height: 100%;
+}
+
+.scroll-container {
+  width: 100%;
+}
+
+.sub-container {
+  height: 70%;
+  min-width: 25%;
+  padding: 30px;
+  font-size: 17px;
+  text-align: center;
+  background: #2064D5;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 5px #0C1D3E;
+}
+
+.sub-container-hor {
+  height: 40%;
+  min-width: 25%;
+  padding: 30px;
+  font-size: 17px;
+  text-align: center;
+  background: #2064D5;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 5px #0C1D3E;
+}
+
+.sub-container-full {
+  height: 90%;
+  width: 80%;
+  min-width: 25%;
+  padding: 30px;
+  font-size: 14px;
+  text-align: center;
+  background: #2064D5;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 5px #0C1D3E;
+}
+
+.description {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.main-pfp {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+}
+
+.textarea {
+  height: 9vh;
+  border-radius: 8px;
+}
+
+.textarea::placeholder {
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* INPUT */
+.input-base {
+  height: 4.5vh;
+  border: transparent;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.input-base::placeholder {
+  padding-left: 10px;
+}
+
+.button-base {
+  width: 14vh;
+  height: 6.5vh;
+  background: #000000;
+  color: #FFFFFF;
+  border: transparent;
+  border-radius: 8px;
+  align-self: center;
+  font-size: 20px;
+}
+
+.button-base:hover {
+  cursor: pointer;
+}
+
+.button-base {
+  padding-left: 7vh;
+  padding-right:7vh;
+  width: auto;
+  height: 6.5vh;
+  background: #000000;
+  color: #FFFFFF;
+  border: transparent;
+  border-radius: 8px;
+  align-self: center;
+  font-size: 20px;
+  transition: ease-in-out 0.4s;
+}
+
+.button-base:hover {
+  cursor: pointer;
+  background: #FFFFFF;
+  color: #000000; 
+}
+
+.button-small {
+  height: 5.5vh;
+  width: 80px;
+  background: #000000;
+  color: #FFFFFF;
+  border: transparent;
+  border-radius: 8px;
+  align-self: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.button-small:hover {
+  cursor: pointer;
+}
+
+.button-small-2 {
+  height: 5.5vh;
+  width: 80px;
+  background: #D7DCE4;
+  color: #000000;
+  border: transparent;
+  border-radius: 8px;
+  align-self: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.button-small-2:hover {
+  cursor: pointer;
+}
+
+.button-large {
+  height: 6.5vh;
+  background: #000000;
+  color: #FFFFFF;
+  border: transparent;
+  border-radius: 8px;
+  align-self: center;
+  font-size: 20px;
+  transition: ease-in-out 0.4s;
+}
+
+.button-large:hover {
+  cursor: pointer;
+  background: #FFFFFF;
+  color: #000000; 
+}
+
+.button-large-2 {
+  padding-top:1.5vh;
+  padding-bottom: 1.5vh;
+  
+  background: #FFFFFF;
+  color: #000000;
+  border: transparent;
+  border-radius: 8px;
+  align-self: center;
+  font-size: 20px;
+  transition: ease-in-out 0.4s;
+}
+
+.button-large-2:hover {
+  cursor: pointer;
+}
+
+.button-large-3 {
+  height: 6.5vh;
+  background: #FFFFFF;
+  color: #000000;
+  border: transparent;
+  border-radius: 8px;
+  font-size: 20px;
+  transition: ease-in-out 0.4s;
+}
+
+.button-large-3:hover {
+  cursor: pointer;
+}
+
+.stroke {
+  background: #FFFFFF;
+}
+
+/* SCROLLBAR */
+.scrollbar::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+	width: 12px;
+  border-radius: 15px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 15px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #0C1D3E;
+}

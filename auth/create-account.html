@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../public/res/styles/stylesheet.css">
+</head>
+<body>
+  <div class="flex flex-1 flex-col bg align-center justify-center text-bottom">
+    <div class="flex flex-1 flex-col gap-2 main justify-center text-center">
+      <h1>CRIAR CONTA</h1>
+      DIGITE SEU E-MAIL PARA FAZER O REGISTRO
+      <input class="input-base" placeholder="EMAIL">
+      <button id="btn_entrar "class="button-large w-100" onclick="cadastrar()">CADASTRAR-SE</button>
+      <div class="flex flex-row gap-2 w-100">
+        <hr class="w-100 h-1 stroke">
+        OU
+        <hr class="w-100 h-1 stroke">
+      </div>
+      <button id="btn_google "class="flex flex-row gap-2 button-large-2 w-100 space-evenly align-center" onclick="cadastrar()">
+        <img src="../public/assets/icons/google.svg" width="40px ">
+        Continuar com Google
+      </button>
+      <button id="btn_apple "class="flex flex-row gap-2 button-large-2 w-100 space-evenly align-center" onclick="cadastrar()">
+        <img src="../public/assets/icons/apple.svg" width="35px">
+        Continuar com Apple
+      </button>
+      <a href="../index.html" class="w-100">VOLTAR AO MENU INICIAL</a>
+    </div>
+    <p class="text-center">By clicking continue, you agree to our Terms of Service and Privacy Policy</p>
+  </div>
+
+  <script>
+    function cadastrar() {
+      alert("Cadastro realizado com sucesso!");
+      window.location = "../root/dashboard.html";
+    }
+  </script>
+</body>
+</html>

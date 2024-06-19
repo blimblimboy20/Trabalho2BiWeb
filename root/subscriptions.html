@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../public/res/styles/stylesheet.css">
+  <script src="https://kit.fontawesome.com/60da566315.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="flex flex-1 flex-col bg overflow-hidden">
+    <!--TOPBAR-->
+    <div class="flex flex-row topbar align-center space-between">
+      <div class="flex flex-row align-center gap-2 ph-15">
+        <img id="pfp" src="../public/assets/images/pfp.jpg" >
+        Juliana
+        <i class="fa-solid fa-chevron-down pointer"></i>
+      </div>
+      <img src="../public/assets/images/67b261a478ac64b64470c3f9be940932.png">
+      <div class="flex flex-row align-center gap-2 ph-15">
+        <button class="button-small-2">...</button>
+        <button onclick="sair()" class="button-small">SAIR</button>
+      </div>
+    </div>
+    <div class="flex flex-row w-100 h-100">
+      <!--SIDEBAR-->
+      <div class="sidebar flex flex-col gap-2 pt-40">
+        <button onclick="inscricoes()"><i class="fa-solid fa-bookmark"></i> INSCRIÇÕES</button>
+        <button onclick="instituicoes()"><i class="fa-solid fa-landmark"></i> INSTITUIÇÕES</button>
+        <button onclick="config()"><i class="fa-solid fa-gear"></i> CONFIGURAÇÕES</button>
+        <button onclick="cadastrar()"><i class="fa-solid fa-circle-plus"></i> CADASTRAR INSTITUIÇÃO</button>
+      </div>
+      <!--CONTENT-->
+      <div class="content flex flex-col w-100 h-91-9 justify-start align-center gap-4 overflow-scroll-y scrollbar">
+        <!--SUB CONTAINERS-->
+        <div class="sub-container-hor flex flex-row w-51 h-20 gap-2">
+          <div class="flex flex-col w-70">
+            <h3>CASA DA AMIZADE</h3>
+            <p class="description overflow-scroll-y scrollbar">
+              A Casa da Amizade é uma entidade sem fins lucrativos que atende famílias do
+              Grotão de Paraisópolis, uma comunidade socialmente vulnerável, localizada próxima à
+              Marginal Pinheiros e ao bairro do Morumbi em São Paulo. Contando com o apoio de seus
+              voluntários e doadores, a Casa da Amizade atua desde 1995 na comunidade, com atividades
+              sociais e educacionais junto aos moradores. A Casa da Amizade não tem filiação política
+              ou religiosa.
+            </p>
+          </div>
+          <div class="flex flex-col space-between align-center w-51">
+            PENDENTE
+            <img class="w-51" src="../public/assets/images/check-half.png">
+            <button onclick="verMais()"class="button-large-3 w-51">VER MAIS</button>
+          </div>
+        </div>
+        <div class="sub-container-hor flex flex-row w-51 h-20 gap-2">
+          <div class="flex flex-col w-70">
+            <h3>INSTITUTO HERDAR</h3>
+            <p class="description overflow-scroll-y scrollbar">
+              O Instituto Herdar é uma organização social que atua no estado de Minas Gerais em parceria
+              com outras organizações, com sua sede na comunidade do São Gabriel em Belo Horizonte desde
+              2007. Os projetos estão focados em assistência, educação, esporte e cultura para crianças,
+              adolescentes, jovens e seus familiares. Temos como princípio gestão de excelência e
+              desenvolvimento pessoal e profissional dos atendidos, seus familiares e da equipe, com o
+              alinhamento dessas ações estamos contribuindo para minimizar a desigualdade social.
+            </p>
+          </div>
+          <div class="flex flex-col space-between align-center w-51">
+            CONCLUIDO
+            <img class="w-51" src="../public/assets/images/check-full.png">
+            <button class="button-large-3 w-51">VER MAIS</button>
+          </div>
+        </div>
+        <div class="sub-container-hor flex flex-row w-51 h-20 gap-2">
+          <div class="flex flex-col w-70">
+            <h3>BIBLIOTECA DA ESPERANÇA</h3>
+            <p class="description overflow-scroll-y scrollbar">
+              Em uma cidade pequena, a Biblioteca da Esperança sempre foi um refúgio
+              para estudantes e amantes de livros. No entanto, devido à falta de fundos,
+              ela enfrenta a ameaça de fechar suas portas. Sem financiamento, não conseguem
+              atualizar seu acervo nem manter as instalações. A comunidade local está
+              organizando um festival do livro para arrecadar fundos e salvar este centro
+              de conhecimento e cultura.
+            </p>
+          </div>
+          <div class="flex flex-col space-between align-center w-51">
+            CONCLUIDO
+            <img class="w-51" src="../public/assets/images/check-full.png">
+            <button class="button-large-3 w-51">VER MAIS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function inscricoes() {
+      window.location = "subscriptions.html";
+    }
+    function instituicoes() {
+      window.location = "dashboard.html";
+    }
+    function config() {
+      window.location = "config.html";
+    }
+    function cadastrar() {
+      window.location = "add.html";
+    }
+    function sair() {
+      window.location = "../index.html"
+    }
+    function verMais() {
+      window.location="subscription-details.html"
+    }
+  </script>
+</body>
+</html>

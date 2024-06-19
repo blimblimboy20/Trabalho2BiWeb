@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="public/res/styles/stylesheet.css">
+</head>
+<body>
+  <div class="flex flex-1 flex-col bg align-center justify-center text-bottom">
+    <div class="flex flex-1 flex-col gap-2 main justify-center">
+      <img class="mb-10 w-100" src="public/assets/images/67b261a478ac64b64470c3f9be940932.png">
+      <input class="input-base" placeholder="LOGIN">
+      <input class="input-base" placeholder="SENHA">
+      <div class="flex flex-row space-between ph-15">
+        <a href="auth/forgot-password.html">ESQUECI A SENHA</a>
+        <a href="auth/create-account.html">CRIAR CONTA</a>
+      </div>
+      <button id="btn_entrar "class="button-base mt-4" onclick="entrar()">ENTRAR</button>
+    </div>
+    <p class="text-center w-100">By clicking continue, you agree to our Terms of Service and Privacy Policy</p>
+  </div>
+
+  <script>
+    function entrar() {
+      window.location = "root/dashboard.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../public/res/styles/stylesheet.css">
+  <script src="https://kit.fontawesome.com/60da566315.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="flex flex-1 flex-col bg overflow-hidden">
+    <!--TOPBAR-->
+    <div class="flex flex-row topbar align-center space-between">
+      <div class="flex flex-row align-center gap-2 ph-15">
+        <img id="pfp" src="../public/assets/images/pfp.jpg" >
+        Juliana
+        <i class="fa-solid fa-chevron-down pointer"></i>
+      </div>
+      <img src="../public/assets/images/67b261a478ac64b64470c3f9be940932.png">
+      <div class="flex flex-row align-center gap-2 ph-15">
+        <button class="button-small-2">...</button>
+        <button onclick="sair()" class="button-small">SAIR</button>
+      </div>
+    </div>
+    <div class="flex flex-row w-100 h-100">
+      <!--SIDEBAR-->
+      <div class="sidebar flex flex-col gap-2 pt-40">
+        <button onclick="inscricoes()"><i class="fa-solid fa-bookmark"></i> INSCRIÇÕES</button>
+        <button onclick="instituicoes()"><i class="fa-solid fa-landmark"></i> INSTITUIÇÕES</button>
+        <button onclick="config()"><i class="fa-solid fa-gear"></i> CONFIGURAÇÕES</button>
+        <button onclick="cadastrar()"><i class="fa-solid fa-circle-plus"></i> CADASTRAR INSTITUIÇÃO</button>
+      </div>
+      <!--CONTENT-->
+      <div class="content flex flex-col w-100 h-91-9 justify-start align-center gap-4">
+        <!--SUB CONTAINERS-->
+        <div class="sub-container-full flex flex-col space-evenly gap-2">
+          <h3>CASA DA AMIZADE</h3>
+          <div class="flex flex-row gap-2 justify-center align-center h-10">
+            <img class="w-80" src="../public/assets/images/logo-casa-amizade.png">
+            <div class="flex flex-col space-between overflow-scroll-y scrollbar h-51">
+              <p class="description">
+                A Casa da Amizade é uma entidade sem fins lucrativos que atende famílias do Grotão de Paraisópolis,
+                uma comunidade socialmente vulnerável, localizada próxima à Marginal Pinheiros e ao bairro do Morumbi
+                em São Paulo. Contando com o apoio de seus voluntários e doadores, a Casa da Amizade atua desde 1995
+                na comunidade, com atividades sociais e educacionais junto aos moradores. A Casa da Amizade não tem filiação
+                política ou religiosa.
+              </p>
+              <p class="description">
+                Visão: A Casa da Amizade é uma entidade sem fins lucrativos que atende famílias do Grotão de Paraisópolis,
+                uma comunidade socialmente vulnerável, localizada próxima à Marginal Pinheiros e ao bairro do Morumbi em
+                São Paulo. Contando com o apoio de seus voluntários e doadores, a Casa da Amizade atua desde 1995 na comunidade,
+                com atividades sociais e educacionais junto aos moradores.
+              </p>
+            </div>
+          </div>
+          <p class="description">
+            Missão: Promover oportunidades educacionais, igualitárias e inclusivas, para as crianças do Ensino Fundamental das escolas
+            públicas de Paraisópolis desenvolverem habilidades e conhecimentos, alavancando suas potencialidades.
+          </p>
+          <div class="flex flex-row space-evenly">
+            <button onclick="aceitar()" class="button-large w-50">ACEITAR</button>
+            <button onclick="recusar()" class="button-large w-50">RECUSAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function inscricoes() {
+      window.location = "subscriptions.html";
+    }
+    function instituicoes() {
+      window.location = "dashboard.html";
+    }
+    function config() {
+      window.location = "config.html";
+    }
+    function cadastrar() {
+      window.location = "add.html";
+    }
+    function sair() {
+      window.location = "../index.html"
+    }
+    function aceitar() {
+      if(confirm("Tem certeza que deseja aceitar esta instituição?")) {
+        alert("Instituição aceita com sucesso!");
+      }
+      window.location="subscription-details.html"
+    }
+    function recusar() {
+      if(confirm("Tem certeza que deseja recusar esta instituição?")) {
+        alert("Instituição recusada com sucesso!");
+      }
+      window.location="subscription-details.html"
+    }
+  </script>
+</body>
+</html>
